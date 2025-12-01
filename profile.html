@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="author" content="freshora">
+  <meta name="description" content="freshora">
+  <meta name="keywords" content="freshora">
+  <link rel="icon" href="assets/images/favicon.png">
+  <title>My Profile - freshora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/main-style.css">
+  <script src="assets/js/tailwind.js"></script>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <!-- Top Header -->
+  <div class="announcement-bar bg-white py-2 border-b border-gray-200 text-sm lg:flex hidden relative z-20">
+    <div class="md:container w-full mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+        <!-- Contact Info -->
+        <div class="flex justify-center md:justify-start space-x-4 mb-2 md:mb-0">
+          <a href="tel:+1234567890" class="text-gray-600 hover:text-primary-dark flex items-center">
+            <i class="fas fa-phone mr-2"></i>
+            <span>+1 (234) 567-890</span>
+          </a>
+          <a href="mailto:info@freshpicks.com" class="text-gray-600 hover:text-primary-dark flex items-center">
+            <i class="fas fa-envelope mr-2"></i>
+            <span>info@freshpicks.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header bg-white shadow-sm main-nav sticky top-0 z-10">
+    <div class="md:container w-full mx-auto px-4">
+      <div class="flex items-center justify-between py-4 gap-3">
+        <!-- Logo and Mobile Menu Toggle -->
+        <div class="flex items-center">
+          <h1 class="logo">
+            <a href="index.html" class="block md:max-w-[150px] max-w-[110px] w-full">
+              <img src="assets/images/logo.png" alt="logo" class="logo-img">
+            </a>
+          </h1>
+        </div>
+
+        <div class="flex items-center md:gap-4 gap-3 header-icons">
+          <a href="account.html" class="text-gray-600 hover:text-primary-dark transition" aria-label="Account">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.5 0C8.86528 0 5.9082 2.95708 5.9082 6.5918C5.9082 10.2265 8.86528 13.1836 12.5 13.1836C16.1347 13.1836 19.0918 10.2265 19.0918 6.5918C19.0918 2.95708 16.1347 0 12.5 0ZM12.5 11.7188C9.673 11.7188 7.37305 9.4188 7.37305 6.5918C7.37305 3.7648 9.673 1.46484 12.5 1.46484C15.327 1.46484 17.627 3.7648 17.627 6.5918C17.627 9.4188 15.327 11.7188 12.5 11.7188Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Common Banner Section -->
+    <section class="banner-section relative lg:py-16 py-10 bg-cover bg-center"
+      style="background-image: url('assets/images/common-banner.png');">
+      <div class="md:container w-full mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-heading font-bold text-center text-gray-900 mb-4">My Profile</h1>
+      </div>
+    </section>
+
+    <section class="lg:py-20 py-10">
+      <div class="md:container w-full mx-auto px-4">
+        <div class="flex flex-col lg:flex-row lg:gap-8 gap-6">
+          <!-- Profile Sidebar -->
+          <div class="lg:w-1/4">
+            <div class="bg-gray-50 border md:p-6 p-4 rounded-lg shadow-sm lg:sticky lg:top-20">
+              <div class="flex items-center gap-4 pb-4 border-b mb-4">
+                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary">
+                  <img src="assets/images/user-avatar.png" alt="User Avatar" class="w-full h-full object-cover">
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">John Doe</h3>
+                  <p class="text-gray-600 text-sm">Member since 2024</p>
+                </div>
+              </div>
+
+              <ul class="space-y-2">
+                <li>
+                  <a href="#profile-info" class="flex items-center gap-3 text-gray-700 hover:text-primary transition">
+                    <i class="fas fa-user text-lg"></i>
+                    <span>Profile Information</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#addresses" class="flex items-center gap-3 text-gray-700 hover:text-primary transition">
+                    <i class="fas fa-map-marker-alt text-lg"></i>
+                    <span>Addresses</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#orders" class="flex items-center gap-3 text-gray-700 hover:text-primary transition">
+                    <i class="fas fa-shopping-bag text-lg"></i>
+                    <span>My Orders</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#wishlist" class="flex items-center gap-3 text-gray-700 hover:text-primary transition">
+                    <i class="fas fa-heart text-lg"></i>
+                    <span>Wishlist</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#reviews" class="flex items-center gap-3 text-gray-700 hover:text-primary transition">
+                    <i class="fas fa-star text-lg"></i>
+                    <span>My Reviews</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Profile Content -->
+          <div class="lg:w-3/4">
+            <!-- Profile Information -->
+            <div id="profile-info" class="bg-gray-50 border md:p-6 p-4 rounded-lg shadow-sm mb-6">
+              <h2 class="font-heading font-bold text-xl md:mb-6 mb-4">Profile Information</h2>
+              <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary focus:border-primary" value="John">
+                  </div>
+                  <div>
+                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary focus:border-primary" value="Doe">
+                  </div>
+                  <div class="md:col-span-2">
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary focus:border-primary" value="john.doe@example.com">
+                  </div>
+                  <div class="md:col-span-2">
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-primary focus:border-primary" value="+1 (234) 567-890">
+                  </div>
+                </div>
+                <div class="flex justify-end">
+                  <button type="submit" class="btn-primary">Save Changes</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Addresses -->
+            <div id="addresses" class="bg-gray-50 border md:p-6 p-4 rounded-lg shadow-sm mb-6">
+              <h2 class="font-heading font-bold text-xl md:mb-6 mb-4">Addresses</h2>
+              <div class="space-y-4">
+                <div class="border rounded-lg p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-semibold">Home Address</h3>
+                    <button class="text-primary hover:underline text-sm">Edit</button>
+                  </div>
+                  <p class="text-gray-600">123 Main Street, Suite 100<br>San Francisco, CA 94105<br>United States</p>
+                </div>
+                <div class="border rounded-lg p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-semibold">Work Address</h3>
+                    <button class="text-primary hover:underline text-sm">Edit</button>
+                  </div>
+                  <p class="text-gray-600">456 Business Ave<br>San Francisco, CA 94105<br>United States</p>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <button class="btn-primary">Add New Address</button>
+              </div>
+            </div>
+
+            <!-- Orders -->
+            <div id="orders" class="bg-gray-50 border md:p-6 p-4 rounded-lg shadow-sm mb-6">
+              <h2 class="font-heading font-bold text-xl md:mb-6 mb-4">My Orders</h2>
+              <div class="space-y-4">
+                <div class="border rounded-lg p-4">
+                  <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-semibold">Order #12345</h3>
+                    <span class="text-sm text-gray-600">Placed on June 1, 2024</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-sm text-gray-600">$159.95</span>
+                    <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full">Delivered</span>
+                  </div>
+                </div>
+                <div class="border rounded-lg p-4">
+                  <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-semibold">Order #12344</h3>
+                    <span class="text-sm text-gray-600">Placed on May 25, 2024</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-sm text-gray-600">$89.99</span>
+                    <span class="px-3 py-1 text-sm bg-yellow-100 text-yellow-800 rounded-full">Processing</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <a href="order.html" class="text-primary hover:underline">View All Orders</a>
+              </div>
+            </div>
+
+            <!-- Wishlist -->
+            <div id="wishlist" class="bg-gray-50 border md:p-6 p-4 rounded-lg shadow-sm mb-6">
+              <h2 class="font-heading font-bold text-xl md:mb-6 mb-4">Wishlist</h2>
+              <div class="space-y-4">
+                <div class="border rounded-lg p-4">
+                  <div class="flex items-center gap-4">
+                    <img src="assets/images/product-01.png" alt="Product" class="w-20 h-20 object-cover rounded-md">
+                    <div class="flex-grow">
+                      <h3 class="font-semibold">Organic Avocado</h3>
+                      <p class="text-sm text-gray-600">$5.99</p>
+                    </div>
+                    <button class="btn-outline">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="border rounded-lg p-4">
+                  <div class="flex items-center gap-4">
+                    <img src="assets/images/product-02.png" alt="Product" class="w-20 h-20 object-cover rounded-md">
+                    <div class="flex-grow">
+                      <h3 class="font-semibold">Organic Spinach</h3>
+                      <p class="text-sm text-gray-600">$3.99</p>
+                    </div>
+                    <button class="btn-outline">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <a href="wishlist.html" class="text-primary hover:underline">View All Wishlist Items</a>
+              </div>
+            </div>
+
+            <!-- Reviews -->
+            <div id="reviews" class="bg-gray-50 border md:p-6 p-4 rounded-lg shadow-sm">
+              <h2 class="font-heading font-bold text-xl md:mb-6 mb-4">My Reviews</h2>
+              <div class="space-y-4">
+                <div class="border rounded-lg p-4">
+                  <div class="flex items-center gap-2 mb-2">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                  </div>
+                  <p class="text-gray-600">Great product! The quality is excellent and the delivery was fast.</p>
+                  <div class="text-sm text-gray-500">Organic Avocado - June 1, 2024</div>
+                </div>
+                <div class="border rounded-lg p-4">
+                  <div class="flex items-center gap-2 mb-2">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-gray-300"></i>
+                  </div>
+                  <p class="text-gray-600">Good product, but could be fresher.</p>
+                  <div class="text-sm text-gray-500">Organic Spinach - May 25, 2024</div>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <a href="javascript:;" class="btn-outline">Write a New Review</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white md:pt-16 pt-10 md:pb-8 pb-4">
+    <div class="md:container w-full mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8 gap-5 md:mb-10 mb-6 md:text-base text-sm">
+        <div>
+          <div class="footer-logo md:max-w-[150px] max-w-[110px] mb-4">
+            <img src="assets/images/logo.png" alt="logo" class="logo-img">
+          </div>
+          <p class="text-gray-400">Fresh, organic produce delivered to your doorstep.</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+            <li><a href="shipping-return.html" class="text-gray-400 hover:text-white transition">Shipping & Returns</a></li>
+            <li><a href="privacy-policy.html" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-4">Customer Service</h3>
+          <ul class="space-y-2">
+            <li><a href="faq.html" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+            <li><a href="track-order.html" class="text-gray-400 hover:text-white transition">Track Order</a></li>
+            <li><a href="shipping-return.html" class="text-gray-400 hover:text-white transition">Returns</a></li>
+            <li><a href="terms-condition.html" class="text-gray-400 hover:text-white transition">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-4">Contact Info</h3>
+          <ul class="space-y-2">
+            <li><i class="fas fa-map-marker-alt text-gray-400 mr-2"></i> 123 Main Street, San Francisco, CA</li>
+            <li><i class="fas fa-phone text-gray-400 mr-2"></i> +1 (234) 567-890</li>
+            <li><i class="fas fa-envelope text-gray-400 mr-2"></i> info@freshpicks.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+        © 2024 freshora. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
